@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New York Times</title>
+    <!---BootStrap CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!---CSS StyleSheet-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!---JQuery-->
+
+    <!---FontAwesome-->
+    <script src="https://use.fontawesome.com/releases/v5.9.0/js/all.js" data-auto-a11y="true"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1 class="jumbotron jumbotron-fluid">New York Times Search</h1>
+        </div>
+        <div class="row parameters">
+            <h2 class="headerParameters"><i class="fal fa-newspaper"></i>  Search Parameters</h2>
+
+            <div class="btn-group buttonGroup" role="group" aria-label="Basic example">
+                <div class="row containerRow">
+                    <h3>Search Term:</h3>
+                    <input id='term' class="inputStyle" type="text">
+                </div>
+                <div class="row containerRow">
+                    <h3>Number of Records to Retrieve:</h3>
+                    <input id='number' class="inputStyle" type="number" name="quantity" min="1" max="25">
+                </div>
+                <div class="row containerRow">
+                    <h3>Start Year:</h3>
+                    <input id='startDate' class="inputStyle" type="number">
+                </div>
+                <div class="row containerRow">
+                    <h3>End Year:</h3>
+                    <input id='endDate' class="inputStyle" type="number">
+                </div>
+                <button id='find' type="button" class="btn btn-secondary button"><i class="fas fa-search"></i> Search</button>
+                <button id='reset' type="button" class="btn btn-secondary button"><i class="fas fa-snowplow"></i>  Clear Results</button>
+            </div>
+
+        </div>
+        <!---End of Search Parameters Container-->
+
+
+
+        <div class="row parameters page-bottom">
+            <div class="row headerParameters">
+                <h2 ><i class="far fa-calendar-alt"></i>  Top Articles</h2>
+            </div>
+            <div id="article-display" class="row buttonGroup"></div>
+        </div>
+        <!---End of Articles Display Div-->
+
+
+
+    </div>
+    <!---End of Container Div-->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <script src="./assets/javascript/api.js"></script>
+</body>
+
+</html>
