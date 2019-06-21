@@ -1,0 +1,38 @@
+body{
+    background-color: white;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.container{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.parameters{
+    border: solid 2px #000000;
+    border-radius: 5px;
+    margin-top: 5%;
+}
+.headerParameters{
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0;
+    padding-left: 5%;
+}
+.buttonGroup{
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 100%;
+}
+.button{
+    margin: 2%;
+}
+.containerRow{
+    margin-left: 2%;
+}
+.inputStyle{
+    width: 80%;
+}
+.page-bottom{
+    margin-bottom: 5%;
+}
